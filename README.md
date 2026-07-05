@@ -1,6 +1,9 @@
-# This directory will be for making a physics engine in C++ from scratch. I wanted to make a physics engine a long time ago but wasn't sure where to start.
+# Welcome to my physics engine in C++!
 
-Sources:
+- The intention will be to build this from scratch, but odds are I might end up including libraries as needed moving forward.
+- I took a 3 introductory physics classes within the first 2 years of undergrad, and I always wanted to try and build this.
 
-Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
-Game Physics Engine Development by Ian Millington
+Sources so far :
+
+- Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
+- Game Physics Engine Development by Ian Millington
