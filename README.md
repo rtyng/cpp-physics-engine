@@ -5,5 +5,9 @@
 
 Sources so far :
 
-Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
-Game Physics Engine Development by Ian Millington
+- Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
+- Game Physics Engine Development by Ian Millington
+
+# Future use case of the engine
+
+- In the future I plan to use this for simulation purposes, so I will be modifying and adapting Millington's Cyclone engine to my use case
