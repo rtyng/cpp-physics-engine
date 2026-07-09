@@ -1,13 +1,30 @@
 # Welcome to my physics engine in C++!
 
-- The intention will be to build this from scratch, but odds are I might end up including libraries as needed moving forward.
-- I took a 3 introductory physics classes within the first 2 years of undergrad, and I always wanted to try and build this.
+- The plan is to build the architecture and numerical integration methods, then integrate rebound and JPL data. SPICE will be the last part of the project.
+- I took 3 introductory physics classes within the first 2 years of undergrad, and I always wanted to try and build this to help simualate the solar system. 
 
-Sources so far :
+Sources and their purposes:
 
-- Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
-- Game Physics Engine Development by Ian Millington
+- Engine Architecture (currently building and testing architecture)
+    - Foundations of Game Engine Development Volume 1: Mathematics by Eric Lengyel
+    - Game Physics Engine Development by Ian Millington
 
-# Future use case of the engine
+- Numerical Simulation 
+    - Computational Physics by Giordano & Nakanishi
+        - https://www.physics.purdue.edu/~hisao/book/
 
-- In the future I plan to use this for simulation purposes, so I will be modifying and adapting Millington's Cyclone engine to my use case
+- Planetary/N-body Design
+    - REBOUND N-body simulator
+        - https://arxiv.org/abs/1110.4876 
+        - https://rebound.hanno-rein.de/
+
+- JPL Horizons
+    - Real Planetary positions/velocities
+        - https://ssd.jpl.nasa.gov/horizons/tutorial.html
+        - https://ssd.jpl.nasa.gov/horizons/manual.html
+
+- NASA NAIF SPICE
+    - Professional-grade ephemeris data
+        - https://naif.jpl.nasa.gov/naif/spiceconcept.html
+        - https://naif.jpl.nasa.gov/naif/data.html
+
