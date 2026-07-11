@@ -1,0 +1,20 @@
+# ninja log v7
+34	85	8054660317897200	CMakeFiles/math_core_tests.dir/tests/test_vec3.cpp.obj	908b501afffcf0fc
+30	87	8054660317862007	CMakeFiles/physics_sim.dir/src/main.cpp.obj	56f7e62dda165be3
+26	754	8054660317832011	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	f97a83baa45d1b2d
+37	957	8054660317927210	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	4cca005f6659f18
+23	1490	8054660317802009	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	504c91850da93533
+19	3782	8054660317756728	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	895280a6238745f
+33	183	8054662838402665	CMakeFiles/physics_sim.dir/src/main.cpp.obj	56f7e62dda165be3
+183	269	8054662839902836	physics_sim.exe	4518e024365ac44c
+26	341	8054662838337567	lib/libgtest.a	ce0fb3b333a4d1b2
+346	418	8054662841541993	lib/libgtest_main.a	b7ba66bb23fe1700
+341	439	8054662841491948	lib/libgmock.a	81cee8b09a3e7653
+439	514	8054662842455906	lib/libgmock_main.a	b7a8565f7111fec8
+418	739	8054662845394626	math_core_tests.exe	d8e42928a364935c
+418	739	8054662845394626	math_core_tests[1]_tests.cmake	d8e42928a364935c
+418	739	8054662845394626	C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests[1]_tests.cmake	d8e42928a364935c
+21	763	8054667520950755	CMakeFiles/math_core_tests.dir/tests/test_vec3.cpp.obj	908b501afffcf0fc
+763	1100	8054667531664832	math_core_tests.exe	d8e42928a364935c
+763	1100	8054667531664832	math_core_tests[1]_tests.cmake	d8e42928a364935c
+763	1100	8054667531664832	C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests[1]_tests.cmake	d8e42928a364935c

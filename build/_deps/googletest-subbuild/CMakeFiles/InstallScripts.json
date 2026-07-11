@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/msys64/home/rtyng/cpp-physics-engine/build/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

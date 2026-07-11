@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "Vec3Construction",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "DefaultConstructorCreatesZeroVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 4
+        }
+      ]
+    }
+  ]
+}

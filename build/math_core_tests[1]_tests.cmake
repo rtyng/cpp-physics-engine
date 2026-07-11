@@ -1,0 +1,3 @@
+add_test([=[Vec3Construction.DefaultConstructorCreatesZeroVector]=]  C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests.exe [==[--gtest_filter=Vec3Construction.DefaultConstructorCreatesZeroVector]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[Vec3Construction.DefaultConstructorCreatesZeroVector]=]  PROPERTIES DEF_SOURCE_LINE C:/msys64/home/rtyng/cpp-physics-engine/tests/test_vec3.cpp:4 WORKING_DIRECTORY C:/msys64/home/rtyng/cpp-physics-engine/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  math_core_tests_TESTS Vec3Construction.DefaultConstructorCreatesZeroVector)

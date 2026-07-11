@@ -1,0 +1,30 @@
+Start testing: Jul 11 05:53 Eastern Daylight Time
+----------------------------------------------------------
+1/1 Testing: Vec3Construction.DefaultConstructorCreatesZeroVector
+1/1 Test: Vec3Construction.DefaultConstructorCreatesZeroVector
+Command: "C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests.exe" "--gtest_filter=Vec3Construction.DefaultConstructorCreatesZeroVector" "--gtest_also_run_disabled_tests"
+Directory: C:/msys64/home/rtyng/cpp-physics-engine/build
+"Vec3Construction.DefaultConstructorCreatesZeroVector" start time: Jul 11 05:53 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/msys64/home/rtyng/cpp-physics-engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Vec3Construction.DefaultConstructorCreatesZeroVector
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Vec3Construction
+[ RUN      ] Vec3Construction.DefaultConstructorCreatesZeroVector
+[       OK ] Vec3Construction.DefaultConstructorCreatesZeroVector (0 ms)
+[----------] 1 test from Vec3Construction (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Vec3Construction.DefaultConstructorCreatesZeroVector" end time: Jul 11 05:53 Eastern Daylight Time
+"Vec3Construction.DefaultConstructorCreatesZeroVector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 11 05:53 Eastern Daylight Time

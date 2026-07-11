@@ -1,0 +1,2 @@
+Vec3Construction.DefaultConstructorCreatesZeroVector 1 0.0091479
+---
