@@ -1,15 +1,321 @@
 {
-  "tests": 1,
+  "tests": 49,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "Vec3Construction",
-      "tests": 1,
+      "tests": 3,
       "testsuite": [
         {
-          "name": "DefaultConstructorCreatesZeroVector",
+          "name": "DefaultConstructorInitializesComponentsToZero",
           "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
-          "line": 4
+          "line": 32
+        },
+        {
+          "name": "ComponentConstructorStoresPositiveValues",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 41
+        },
+        {
+          "name": "ComponentConstructorStoresNegativeAndFractionalValues",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "name": "Vec3ScalarMultiplication",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "MultipliesEveryComponentByPositiveScalar",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 63
+        },
+        {
+          "name": "MultipliesEveryComponentByNegativeScalar",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 72
+        },
+        {
+          "name": "MultiplicationByZeroProducesZeroVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 81
+        },
+        {
+          "name": "MultiplicationByOnePreservesVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 90
+        },
+        {
+          "name": "DoesNotModifyOriginalVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "name": "Vec3CompoundAddition",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "AddsComponentsToCurrentVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 112
+        },
+        {
+          "name": "AddingZeroLeavesVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 122
+        },
+        {
+          "name": "SupportsNegativeComponents",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "name": "Vec3CompoundSubtraction",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "SubtractsComponentsFromCurrentVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 144
+        },
+        {
+          "name": "SubtractingZeroLeavesVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 154
+        },
+        {
+          "name": "SubtractingVectorFromItselfProducesZero",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "name": "Vec3CompoundScalarMultiplication",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ModifiesEveryComponent",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 177
+        },
+        {
+          "name": "MultiplicationByZeroClearsVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 186
+        },
+        {
+          "name": "MultiplicationByNegativeOneInvertsVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 195
+        }
+      ]
+    },
+    {
+      "name": "Vec3SquareMagnitude",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ZeroVectorHasZeroSquareMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 208
+        },
+        {
+          "name": "ComputesSumOfSquaredComponents",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 215
+        },
+        {
+          "name": "IsUnaffectedByComponentSigns",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 222
+        },
+        {
+          "name": "DoesNotModifyVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "name": "Vec3Magnitude",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "ZeroVectorHasZeroMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 245
+        },
+        {
+          "name": "ComputesKnownThreeFourFiveMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 252
+        },
+        {
+          "name": "ComputesMagnitudeUsingAllThreeComponents",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 259
+        },
+        {
+          "name": "IsUnaffectedByComponentSigns",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 266
+        },
+        {
+          "name": "MatchesSquareRootOfSquareMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 276
+        },
+        {
+          "name": "DoesNotModifyVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "name": "Vec3Normalize",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "ProducesUnitLengthVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 299
+        },
+        {
+          "name": "ProducesExpectedComponents",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 308
+        },
+        {
+          "name": "PreservesDirectionForNegativeComponents",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 317
+        },
+        {
+          "name": "LeavesZeroVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 326
+        },
+        {
+          "name": "LeavesUnitVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 335
+        },
+        {
+          "name": "NormalizingTwiceProducesSameResult",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "name": "Vec3Unit",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ReturnsNormalizedCopy",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 360
+        },
+        {
+          "name": "DoesNotModifyOriginalVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 370
+        },
+        {
+          "name": "ReturnsZeroForZeroVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 379
+        },
+        {
+          "name": "ReturnsEquivalentCopyForUnitVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 388
+        }
+      ]
+    },
+    {
+      "name": "Vec3Clear",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ResetsAllComponentsToZero",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 401
+        },
+        {
+          "name": "LeavesZeroVectorAtZero",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 412
+        },
+        {
+          "name": "ProducesZeroMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 421
+        }
+      ]
+    },
+    {
+      "name": "Vec3Invert",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "NegatesEveryComponent",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 435
+        },
+        {
+          "name": "LeavesZeroVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 444
+        },
+        {
+          "name": "ApplyingTwiceRestoresOriginalVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 453
+        },
+        {
+          "name": "DoesNotChangeMagnitude",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 464
+        }
+      ]
+    },
+    {
+      "name": "Vec3AddScaledVector",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "AddsVectorMultipliedByScale",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 478
+        },
+        {
+          "name": "ZeroScaleLeavesCurrentVectorUnchanged",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 488
+        },
+        {
+          "name": "NegativeScaleSubtractsScaledVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 499
+        },
+        {
+          "name": "DoesNotModifyInputVector",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 509
+        },
+        {
+          "name": "MatchesManualComponentCalculation",
+          "file": "C:\/msys64\/home\/rtyng\/cpp-physics-engine\/tests\/test_vec3.cpp",
+          "line": 519
         }
       ]
     }
