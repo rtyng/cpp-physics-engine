@@ -1,10 +1,8 @@
 /*
-core.hpp
+math-core.hpp
 
-Basic math types for the physics engine
+Interface for core math types of my physics engine, which will be used for simulating orbital mechanics
 
-Vec3 represents a 3D vector using double precision. It is used for 
-positions, velocities, accelerations, forces, and directions.
 
 Design notes:
 - No padding component currently
@@ -173,19 +171,19 @@ class Vec3{
 };
 
 /*
-*class Quarternion represents Quarternion objects, which will be used in the simulation for planetary rotations, axial tilts, etc. 
+*class Quaternion represents Quaternion objects, which will be used in the simulation for planetary rotations, axial tilts, etc. 
 
-A Quarternion is a four-part hyper-complex number used in 3d rotations and orientations. Represented in the form a + bi + cj + dk where 
+A Quaternion is a four-part hyper-complex number used in 3d rotations and orientations. Represented in the form a + bi + cj + dk where 
 a, b, c, d are real numbers. i, j, k are the basis elements which satisfy the equation: i^2 = j^2 = k^2 = -1
 
-Quarternion math is not commutative:
+Quaternion math is not commutative:
     - ij = -ji = k
     - jk = -kl = i
     - ki = -ik = j
 
-Similar to 3d vectors can be broken down into their magnitude and direction, Quarternions can also be broken down into their angle of rotation theta, and their axis of rotation
+Similar to 3d vectors can be broken down into their magnitude and direction, Quaternions can also be broken down into their angle of rotation theta, and their axis of rotation
 
-Example: A unit quarternion designed to rotate a point is typically written mathematically as:
+Example: A unit quaternion designed to rotate a point is typically written mathematically as:
 
 q = cos(theta/2) + sin(theta/2)*(xi + yj + zk)
 
@@ -196,14 +194,14 @@ Chapter 9.2.4: Quarternions from Millington
 */
 
 
-class Quarternion{
+class Quaternion{
     public:
         // Same declarations as the Vec3 class above, just declaring r to 1 instead of 0
         double r{1}, i{}, j{}, k{};
 
         // default to zero, then allow user to explicitly declare a Quarternion object
-        Quarternion() = default;
-        explicit Quarternion(double r_, double i_, double j_, double k_)
+        Quaternion() = default;
+        explicit Quaternion(double r_, double i_, double j_, double k_)
             : r{r_}, i{i_}, j{j_}, k{k_} {}
         
         // quarternion normalization follows the same idea as vector normalization
