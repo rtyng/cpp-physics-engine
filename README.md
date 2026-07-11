@@ -17,20 +17,6 @@ The current development phase focuses on the engine's core math interface.
     - 'Quaternion' and 'Mat' classes
     - Design decisions based on simulation and rendering
 
-## Current Architecture
-
-The mathematical core is currently implemented as a header-only CMake interface library.
-
-cpp-physics-engine/
-├── include/
-│   └── math-core.hpp
-├── src/
-│   └── main.cpp
-├── tests/
-│   └── test_vec3.cpp
-├── CMakeLists.txt
-├── README.md
-└── sources.md
 
 ## Near-Future Milestones
 
