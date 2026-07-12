@@ -2,9 +2,9 @@
 
 This project is an educational physics engine written in modern C++ for simulating orbital mechanics and, eventually, the motion of bodies within the Solar System.
 
-The current goal is to build the mathematical foundation, simulation architecture, and numerical integration system from first principles. After the core engine is stable and thoroughly tested, I plan to evaluate integration with established scientific tools and datasets such as REBOUND, JPL ephemeris data, and NASA's SPICE toolkit.
+The current goal is to build the mathematical foundation, simulation architecture, and numerical integration system. After the core engine is stable and thoroughly tested, I plan to evaluate integration with established scientific tools and datasets such as REBOUND, JPL ephemeris data, and NASA's SPICE toolkit.
 
-I took three introductory physics courses during my first two years of undergraduate study and have wanted to build a Solar System simulation ever since. This project is also an opportunity to strengthen my understanding of C++, numerical methods, software architecture, testing, and scientific computing.
+I took three introductory physics courses during my first two years of undergrad and have wanted to build a Solar System simulation ever since. This project is also an opportunity to strengthen my understanding of C++, numerical methods, software architecture, testing, and scientific computing.
 
 ## Current Progress
 
