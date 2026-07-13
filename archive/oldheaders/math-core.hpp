@@ -17,6 +17,8 @@ Key Design Difference:
         - RK4 will need to evaluate that coupled system at intermediate points in time
 
 */
+
+// *Instruct compiler to skip parsing this file if it has already been encountered in the translation unit
 #pragma once 
 
 #include <cmath>
@@ -50,16 +52,19 @@ class Vec3{
 
     /*
     *Generate the default constructor 
-    *Member function for the user to create their own custom Vec3
-
+    
     *Future uses/purpose:
         - Necessary for future testing and simulation purposes, explicit keyword should keep compiler from trying to change Vec3 to another type
     */ 
     Vec3() = default;
+
+    // *Member function for the user to create their own custom Vec3
     explicit Vec3(double xValue, double yValue, double zValue)
         : x{xValue}, y{yValue}, z{zValue} {}
 
     
+
+
     /*
     *Member functions for the class to add and subtract other vectors
     
@@ -67,11 +72,29 @@ class Vec3{
         - operator overload, const, &, are for optimization purposes
         - other Vec3 won't be copied, both const are promises not to modify other Vec3 or original Vec3
     */
+
+    // *Returns value of Vec3 + other Vec3
     Vec3 operator+(const Vec3& other) const {
         return Vec3{x + other.x, y + other.y, z + other.z};
     }
+
+    // *Adds this Vec3 + other Vec3
+    void operator+=(const Vec3& other) {
+        x += other.x;
+        y += other.y;
+        z += other.z;
+    }
+
+    // *Returns value of Vec3 - other Vec3 
     Vec3 operator-(const Vec3& other) const {
         return Vec3{x - other.x, y - other.y, z - other.z};
+    }
+
+    // *Subtracts this Vec3 - other Vec3
+    void operator-=(const Vec3& other) {
+        x -= other.x;
+        y -= other.y;
+        z -= other.z;
     }
 
 
@@ -82,24 +105,14 @@ class Vec3{
         - Allows Vec3 larger = velocity * 10.0; for example
         - Same idea as the vector addition and subtraction implementation
     */
-    Vec3 operator*(double scalar) const {
+
+    // Returns a copy of Vec3 * scalar
+    Vec3 operator*(const double scalar) const {
         return Vec3{x * scalar, y * scalar, z * scalar};
     }
 
-    // Modifications of current vector instead of returning a new one
-    void operator+=(const Vec3& other) {
-        x += other.x;
-        y += other.y;
-        z += other.z;
-    }
-
-    void operator-=(const Vec3& other) {
-        x -= other.x;
-        y -= other.y;
-        z -= other.z;
-    }
-
-    void operator*=(double scalar) {
+    // 
+    void operator*=(const double scalar) {
         x *= scalar;
         y *= scalar;
         z *= scalar;

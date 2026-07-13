@@ -1,45 +1,25 @@
-# C++ Physics Engine for Orbital Simulation
+# C++ Lab for Benchmarking Numerical Integration Techniques
 
-This project is an educational physics engine written in modern C++ for simulating orbital mechanics and, eventually, the motion of bodies within the Solar System.
+A C++ platform for implementing, comparing, validating, and visualizing numerical integration methods for orbital dynamics.
 
-The current goal is to build the mathematical foundation, simulation architecture, and numerical integration system from first principles. After the core engine is stable and thoroughly tested, I plan to evaluate integration with established scientific tools and datasets such as REBOUND, JPL ephemeris data, and NASA's SPICE toolkit.
-
-I took three introductory physics courses during my first two years of undergraduate study and have wanted to build a Solar System simulation ever since. This project is also an opportunity to strengthen my understanding of C++, numerical methods, software architecture, testing, and scientific computing.
-
-## Current Progress
-
-The current development phase focuses on the engine's core mathematical interface.
-
-* Implementing and testing the `Vec3` class
-* Writing unit tests with GoogleTest
-* Using CMake to create a repeatable build and testing workflow
-* Continuing the design of the core mathematical interface
-
-  * `Quaternion` and matrix classes
-  * Design decisions based on the needs of both simulation and rendering
 
 ## Near-Term Milestones
 
-* Complete the core mathematical interface
-* Finish testing the objects contained within the math layer
-* Continue studying Ian Millington's *Game Physics Engine Development*
-* Review additional physics engines and orbital-simulation libraries after the initial mechanics interface is complete
-* Begin defining the data structures required for particles, bodies, forces, and system state
+- Define the platform's experiment workflow
+- Select the first simulation libraries and integrators
+- Build a REBOUND integration layer
+- Create shared configuration and result formats
+- Add command-line experiment execution
+- Export results to CSV or JSON
 
 ## Long-Term Milestones
 
-Millington's force-generator architecture and numerical integration methods do not directly map onto the requirements of a Solar System simulation.
-
-A gravitational N-body simulation requires each body's acceleration to depend on the positions and masses of the other bodies in the system. Because the system is coupled, the engine will need to evaluate the complete system state rather than process each body independently.
-
-Planned long-term work includes:
-
-* Designing an N-body gravitational force evaluator
-* Implementing fourth-order Runge-Kutta integration
-* Evaluating the coupled system at several intermediate states during each time step
-* Testing conservation of momentum, angular momentum, and total energy
-* Comparing the simulation against known orbital solutions
-* Evaluating future integration with REBOUND, JPL ephemeris data, and SPICE
+- Support multiple orbital-simulation backends
+- Compare accuracy, stability, and runtime across integrators
+- Add JPL Horizons and SPICE data support
+- Provide optional raylib visualization
+- Add reproducible benchmark scenarios
+- Package the platform for use on other systems
 
 ## Tools
 
@@ -84,7 +64,7 @@ ctest --test-dir build --output-on-failure
 Run the GoogleTest executable directly:
 
 ```bash
-./build/math_core_tests.exe
+build/math_core_tests.exe
 ```
 
 ## Sources
