@@ -1,5 +1,4 @@
-#include "math-core.hpp"
-
+#include "raylib.h"
 
 // program entry point
 int main(){

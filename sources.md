@@ -4,15 +4,13 @@ This document records the books, papers, software projects, datasets, and techni
 
 The references are organized by their role in the project. Descriptions under each citation explain how the source was used in the platforma's design or implementation.
 
-## Orbital Mechanics
+## Numerical Integration Techniques
 
-### [1] Howard D. Curtis, *Orbital Mechanics for Engineering Students*, 4th ed. Oxford, U.K.: Butterworth-Heinemann, 2020.
 
-**Project use:** Two-body motion, orbital elements, state vectors, propagation methods, and validation of orbital calculations.
 
 ## Numerical Methods and Computational Physics
 
-### [2] Nicholas J. Giordano and Hisao Nakanishi, *Computational Physics*, 2nd ed. Upper Saddle River, NJ, USA: Pearson Prentice Hall, 2006.
+### [2] Nicholas J. Giordano and Hisao Nakanishi, *Computational Physics*, 2nd ed. Upper Saddle River, NJ, USA: Benjamin Cummings, 2005. ISBN: 0131469908
 
 **Project use:** Numerical simulation methodology, ordinary differential equations, computational modeling, error analysis, and validation of physical simulations.
 

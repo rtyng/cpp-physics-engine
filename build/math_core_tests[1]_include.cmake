@@ -1,5 +1,0 @@
-if(EXISTS "C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests[1]_tests.cmake")
-  include("C:/msys64/home/rtyng/cpp-physics-engine/build/math_core_tests[1]_tests.cmake")
-else()
-  add_test(math_core_tests_NOT_BUILT math_core_tests_NOT_BUILT)
-endif()
