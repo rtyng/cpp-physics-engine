@@ -2,7 +2,6 @@
 
 A platform built in C++ for implementing, comparing, validating, and visualizing numerical integration methods for orbital dynamics.
 
-For now, I deleted the build folder and moved everything into /archive. I am going to be coming back to this later on after practicing building programs in python for a couple months. Doesn't make much sense to waste effort on C++ when I need to focus on the fundamentals. Easier to do that in a language that I have much more experience in. 
 
 ## Numerical Integration methods 
 
