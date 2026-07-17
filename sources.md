@@ -4,10 +4,6 @@ This document records the books, papers, software projects, datasets, and techni
 
 The references are organized by their role in the project. Descriptions under each citation explain how the source was used in the platforma's design or implementation.
 
-## Numerical Integration Techniques
-
-
-
 ## Numerical Methods and Computational Physics
 
 ### [2] Nicholas J. Giordano and Hisao Nakanishi, *Computational Physics*, 2nd ed. Upper Saddle River, NJ, USA: Benjamin Cummings, 2005. ISBN: 0131469908

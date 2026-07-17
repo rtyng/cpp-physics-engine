@@ -1,9 +1,13 @@
 # C++ Lab for Benchmarking Numerical Integration Techniques
 
-A platform built in C++ for implementing, comparing, validating, and visualizing numerical integration methods for orbital dynamics.
+- A command-line platform built in C++ for configuring, running, validating, and comparing numerical integration methods in different scenarios. The goal is for the platform to be able to evaluate methods using known differenctial equations and report accuracy, stability, convergence, and runtime.
+
+- The project follows an OOP design philosophy with the main abstractions being the problem, the integrator, and the experiment runner.
+
+- I struggled a lot with OOP based design over the course of my intro computer science classes I took during the spring 2020 and fall 2021 semester of my time at Wesleyan. I want to use this project to practice implementing OOP based design methods.
 
 
-## Numerical Integration methods 
+## Numerical Integration methods (More TBD)
 
 - Explicit Euler
 - Semi-implicit Euler
@@ -12,10 +16,10 @@ A platform built in C++ for implementing, comparing, validating, and visualizing
 - REBOUND IAS15
 - REBOUND WHFast
 
-## Metrics 
+## Experiment measuerements (More TBD)
 
-- Runtime
-- Final position error
+- Execution-time
+- Final-state error
 - Orbital period error
 - Energy drift
 - Angular-momentum drift
@@ -24,13 +28,6 @@ A platform built in C++ for implementing, comparing, validating, and visualizing
 
 * MSYS2 UCRT64 environment
 * GCC `g++` 16.1.0
-* Ninja 1.13.2
-* CMake 4.3.3
-
-  * GoogleTest managed through CMake `FetchContent`
-  * Minimum required CMake version: 3.20
-
-
 
 ## Sources
 

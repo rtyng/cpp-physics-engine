@@ -1,8 +1,7 @@
-#include "raylib.h"
 
-// program entry point
-int main(){
+// Program entry point
+int main()
+{
 
     return 0;
 }
-
